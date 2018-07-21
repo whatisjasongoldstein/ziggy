@@ -61,7 +61,7 @@ const build = async (dest) => {
 }
 
 gulp.task('dist', () => {
-  build(destinations.dist);
+  return build(destinations.dist);
 })
 
 gulp.task('develop', async (done) => {
