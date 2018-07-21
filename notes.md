@@ -1,5 +1,5 @@
 
-Stay woke. Then curl up in a ball and snooze. Then get up again and rip the squeaker out of your hedgehog.
+Stay woke. Then bark in your sleep. #VoteZiggy #FloppyEars
 
 ---
 
