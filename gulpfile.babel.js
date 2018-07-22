@@ -18,10 +18,13 @@ const destinations = {
   dist: 'docs',
 }
 
-const createHTML = (dest) => {
+const createHTML = async (dest) => {
   return gulp.src('src/templates/pages/**/*.html')
     .pipe(nunjucksRender({
-      path: ['src/templates/'],
+      path: [
+        'src/templates/',
+        'src/markdown/',
+      ],
       manageEnv: manageEnvironment,
     }))
     .pipe(gulp.dest(dest))
@@ -52,9 +55,9 @@ function reload(done) {
   return done();
 }
 
-
 const build = async (dest) => {
   await clean(dest);
+
   return Promise.all([
     createHTML(dest),
     createCSS(dest),
@@ -75,9 +78,9 @@ gulp.task('develop', async (done) => {
   ]));
 
   server.init({
-    notify: false,
+    notify: true,
     port: 9000,
-    open: true,
+    open: false,
     startPath: '/',
     server: {
       baseDir: ['.tmp']

@@ -4,22 +4,19 @@
   {{ component('components/hero.html') }}
   {{ component('components/breaking.html') }}
 
-  <section>
-    <h1>Ziggy's Platform</h1>
-    <ol>
-      <li>Build more Dog Parks</li>
-      <li>Banning discrimination against dogs and requiring all restaurants and public businesses to allow them inside</li>
-      <li>Criminalizing squirrels</li>
-      <li>Universal Doggy Daycare</li>
-      <li>Designating Trump Hotel as an Official Pee Spot</li>
-    </ol>
-  </section>
+  {{ component('components/platform.html', {
+    "title": "Ziggy's Platform",
+    "items": [
+      "Build more Dog Parks",
+      "Banning discrimination against dogs and requiring all restaurants and public businesses to allow them inside",
+      "Criminalizing squirrels",
+      "Universal Doggy Daycare",
+      "Designating Trump Hotel as an Official Pee Spot"
+    ]
+  }) }}
 
   <section>
-    <h1>Ziggy's story</h1>
-    Ziggy was born in a shelter in West Virginia but escaped hardship after being adopted through the City Dogs foster network. He graduated from Spot on Training University, despite incessantly barking in class.
-
-    Known for his floppy ears and extreme friendliness, Ziggy immediately 
+    {{ component('story.md') | markdown }}
   </section>
 
   <section>
