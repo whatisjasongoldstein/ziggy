@@ -38,7 +38,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url("https://ziggy.scruffylogic.s3.amazonaws.com/assets/cover-1920-85.jpg");
+  background-image: url("/images/cover-1920-85.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -184,6 +184,24 @@
   .c-photo-module img {
     display: block;
     max-width: 100%; }
+
+.c-cta {
+  background: #0454d8;
+  color: white;
+  padding: 25vh 10vw;
+  text-align: center; }
+  .c-cta h1 {
+    font-style: italic;
+    font-weight: 200;
+    letter-spacing: 0.05em; }
+
+.c-cta__hashtags .tag {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #fc4657;
+          text-decoration-color: #fc4657;
+  font-size: 2rem;
+  display: inline-block;
+  margin: 0 1rem; }
 
 body {
   font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", sans-serif;
