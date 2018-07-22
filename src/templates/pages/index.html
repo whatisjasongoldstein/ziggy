@@ -7,8 +7,8 @@
   {{ component('components/platform.html', {
     "title": "Ziggy's Platform",
     "items": [
-      "Build more Dog Parks",
-      "Banning discrimination against dogs and requiring all restaurants and public businesses to allow them inside",
+      "Building more dog parks",
+      "Banning discrimination against dogs, requiring all restaurants and public businesses to allow them inside",
       "Criminalizing squirrels",
       "Universal Doggy Daycare",
       "Designating Trump Hotel as an Official Pee Spot"
@@ -30,6 +30,12 @@
       {
         src: "https://ziggy.scruffylogic.s3.amazonaws.com/assets/guitar-640.jpg",
         caption: "Ziggy has picked up guitar in his free time. He likes Bowie, obviously.",
+        width: 640,
+        height: 480
+      },
+      {
+        src: "https://ziggy.scruffylogic.s3.amazonaws.com/assets/hedgehog.jpg",
+        caption: "Hedgehog 🦔",
         width: 640,
         height: 480
       }
@@ -62,5 +68,22 @@
     "source": "Rumi, Golden Puppy and Ziggy's BFF",
     "modifier": ""
   }) }}
+
+  {{ component('components/photoset.html', {
+    items: [
+      {
+        src: "https://ziggy.scruffylogic.s3.amazonaws.com/assets/suitcase.jpg",
+        caption: "Floppy as hell and ready to roll!"
+      }
+    ]
+  }) }}
+
+  <div class="c-cta">
+    <h1>Join the Repuplican revolution for a better DC!</h1>
+    <div class="c-cta__hashtags">
+      <span class="tag">#VoteZiggy</span>
+      <span class="tag">#FloppyEars</span>
+    </div>
+  </div>
 
 {% endblock body %}
