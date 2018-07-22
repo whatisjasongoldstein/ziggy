@@ -42,6 +42,12 @@ const createJS = (dest) => {
     .pipe(gulp.dest(dest))
 }
 
+const createImages = (dest) => {
+  return gulp.src(['src/**/*.{jpg,jpeg,png,svg}'])
+    .pipe(gulp.dest(dest))
+}
+
+
 const clean = (dest) => {
   return del([
     `${ dest }/*`,
@@ -68,6 +74,7 @@ const build = async (dest) => {
   await clean(dest);
 
   return Promise.all([
+    createImages(dest),
     createHTML(dest),
     createCSS(dest),
     createJS(dest),
