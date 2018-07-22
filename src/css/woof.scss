@@ -1,7 +1,11 @@
 @import "./settings/color";
 @import "./settings/typography";
+
+@import "./helpers/layout";
+
 @import "./components/header";
 @import "./components/hero";
+@import "./components/breaking";
 
 
 body {

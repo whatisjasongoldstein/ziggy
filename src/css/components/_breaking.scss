@@ -1,0 +1,13 @@
+.c-breaking {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.c-breaking__label {
+  color: $color--pink;
+  &::after {
+    content: "»";
+  }
+}
