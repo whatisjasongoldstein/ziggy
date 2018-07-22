@@ -49,6 +49,12 @@ const clean = (dest) => {
   ]);
 }
 
+const copyLibs = (dest) => {
+  return gulp.src([
+    'node_modules/lazysizes/lazysizes.min.js',
+  ]).pipe(gulp.dest(`${ dest }/lib`));
+}
+
 /**
  * Make browsersync.reload work with Gulp 4
  * @See: https://github.com/gulpjs/gulp/issues/1626
@@ -65,6 +71,7 @@ const build = async (dest) => {
     createHTML(dest),
     createCSS(dest),
     createJS(dest),
+    copyLibs(dest),
   ])
 }
 

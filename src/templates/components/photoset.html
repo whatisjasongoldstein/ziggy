@@ -1,0 +1,8 @@
+<div class="c-photoset">
+  {% for item in items %}
+    <figure>
+      <img class="lazyload" data-src="{{ item.src }}">
+      <figcaption>{{ item.caption }}</figcaption>      
+    </figure>
+  {% endfor %}
+</div>

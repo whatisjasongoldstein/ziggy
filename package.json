@@ -10,7 +10,9 @@
   },
   "author": "Ziggy Goldstein-Estes",
   "license": "UNLICENSED",
-  "dependencies": {},
+  "dependencies": {
+    "lazysizes": "^4.0.4"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-plugin-transform-runtime": "^6.23.0",

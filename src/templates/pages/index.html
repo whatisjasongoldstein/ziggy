@@ -19,20 +19,40 @@
     {{ component('story.md') | markdown }}
   </section>
 
-  <div class="c-photo-set">
-    <figure>
-      <img src="https://ziggy.scruffylogic.s3.amazonaws.com/assets/puppy-640.jpg">
-      <figcaption>Being a puppy at his CDR foster home</figcaption>
-    </figure>
-    <figure>
-      <img src="https://ziggy.scruffylogic.s3.amazonaws.com/assets/guitar-640.jpg">
-      <figcaption>Ziggy has picked up guitar in his free time. He likes Bowie, obviously.</figcaption>
-    </figure>
-  </div>
+  {{ component('components/photoset.html', {
+    items: [
+      {
+        src: "https://ziggy.scruffylogic.s3.amazonaws.com/assets/puppy-640.jpg",
+        caption: "Being a puppy at his CDR foster home",
+        width: 640,
+        height: 480
+      },
+      {
+        src: "https://ziggy.scruffylogic.s3.amazonaws.com/assets/guitar-640.jpg",
+        caption: "Ziggy has picked up guitar in his free time. He likes Bowie, obviously.",
+        width: 640,
+        height: 480
+      }
+    ]
+  }) }}
 
-  <section class="c-section l-container--full">
-
+  <section class="c-section l-container--full u-separator">
     {{ component('precedent.md') | markdown }}
   </section>
+
+  {{ component('components/photo-module.html', {
+    "src": "https://ziggy.scruffylogic.s3.amazonaws.com/assets/office-hours.jpg",
+    "caption": "Ziggy holds office hours.",
+    "quote": "”He is excellent at hearing. Listening... depends. Which means he won’t be captive to special interests unless they happen to be golden retrievers.”",
+    "source": "Jason"
+  }) }}
+
+  {{ component('components/photo-module.html', {
+    "src": "https://ziggy.scruffylogic.s3.amazonaws.com/assets/dacha.jpg",
+    "caption": "Napping in one of DC's finest dog-friendly establishments.",
+    "quote": "”Mr. Ziggy seems confused by complex issues like Initiative 77. He seems less interested in whether restaurant workers will receive tips than whether they will bring him food, which they currently do not.”",
+    "source": "<i>The Washington Post</i>",
+    "modifier": "is-reverse"
+  }) }}
 
 {% endblock body %}

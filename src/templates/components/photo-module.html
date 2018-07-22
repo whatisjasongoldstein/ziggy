@@ -1,0 +1,14 @@
+<div class="c-photo-module {{ modifier or '' }}">
+  <figure>
+    <img class="lazyload" data-src="{{ src }}">
+    {% if caption %}
+      <figcaption>{{ caption|safe }}</figcaption>      
+    {% endif %}
+  </figure>
+  <blockquote>
+    {{ quote|safe }}
+    {% if source %}
+      <footer>— {{ source|safe }}</footer>
+    {% endif %}
+  </blockquote>
+</div>

@@ -1,0 +1,29 @@
+$breakpoint--stack-photos: 600px;
+
+.c-photoset {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+
+  flex-direction: column;
+  @media (min-width: $breakpoint--stack-photos) {
+    flex-direction: row;
+  }
+
+  figure {
+    margin: 0.5rem;
+    padding: 0;
+    position: relative;
+  }
+
+  figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
