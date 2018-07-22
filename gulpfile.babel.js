@@ -5,6 +5,7 @@ import browserSync from 'browser-sync';
 
 // HTML
 import nunjucksRender from 'gulp-nunjucks-render';
+import { manageEnvironment } from './template';
 
 // CSS
 import sass from 'gulp-sass';
@@ -21,6 +22,7 @@ const createHTML = (dest) => {
   return gulp.src('src/templates/pages/**/*.html')
     .pipe(nunjucksRender({
       path: ['src/templates/'],
+      manageEnv: manageEnvironment,
     }))
     .pipe(gulp.dest(dest))
 }

@@ -1,0 +1,50 @@
+$breakpoint--hero-adjust: 800px;
+
+.c-hero {
+  height: 100vh;
+  background: #ccc;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url('https://ziggy.scruffylogic.s3.amazonaws.com/assets/cover-1920-85.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.c-hero__content {
+  background: transparentize($color--blue, 0.1);
+  @media (min-width: $breakpoint--hero-adjust) {
+    margin: 5%;
+    max-width: 28rem;
+  }
+
+  & > * {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1 {
+    font-weight: 300;
+    margin: 0.5rem 0;
+  }
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.c-hero__banner {
+  background: $color--pink;
+  font-weight: 900;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.c-hero__emoji {
+  font-size: 2em;
+  vertical-align: middle;
+  line-height: 1;
+}

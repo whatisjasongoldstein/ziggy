@@ -1,0 +1,15 @@
+@import "./settings/color";
+@import "./settings/typography";
+@import "./components/header";
+@import "./components/hero";
+
+
+body {
+  font-family: $font--sans;
+  margin: 0;
+  font-size: 16px;
+}
+
+body * {
+  box-sizing: border-box;
+}
