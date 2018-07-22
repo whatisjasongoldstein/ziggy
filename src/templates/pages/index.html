@@ -1,5 +1,11 @@
 {% extends "layouts/base.html" %}
 
+{% block meta %}
+   <meta property="og:title" content="Ziggy is running for DC mayor!">
+   <meta property="og:description" content="#VoteZiggy #FloppyEars">
+   <meta property="og:image" content="/images/cover-1920-85.jpg">
+{% endblock meta %}
+
 {% block body %}
   {{ component('components/hero.html') }}
   {{ component('components/breaking.html') }}
