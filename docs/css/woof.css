@@ -4,14 +4,30 @@
   max-width: 960px;
   margin: 1em auto; }
 
-.l-container--separator::after {
+.u-separator::after {
   content: "";
   display: block;
   border-bottom: 1px solid #ccc;
   width: 100vw;
   position: relative;
   left: calc(50% - 100vw / 2);
-  margin: 3rem 0; }
+  margin: 3rem 0 2rem 0; }
+
+.c-section--no-separator::after {
+  display: none; }
+
+.c-section h1 {
+  color: #0454d8;
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 0; }
+
+.c-section p {
+  line-height: 1.5;
+  font-size: 1.2rem; }
+
+.c-section small {
+  color: #666; }
 
 .c-hero {
   height: 100vh;
@@ -57,27 +73,32 @@
   margin-bottom: 2rem;
   font-size: 1.5rem;
   line-height: 1.5; }
+  .c-breaking::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    width: 100vw;
+    position: relative;
+    left: calc(50% - 100vw / 2);
+    margin: 3rem 0 2rem 0; }
 
 .c-breaking__label {
   color: #fc4657; }
   .c-breaking__label::after {
     content: "»"; }
 
-.c-platform h1 {
-  color: #fc4657; }
-
-.c-platform__items {
+.c-platform-items {
   list-style-type: none;
   counter-reset: platform-counter;
   padding: 0;
   margin: 0; }
 
-.c-platform__item {
+.c-platform-item {
   display: flex;
   margin: 1rem 0;
   justify-content: flex-start;
   align-items: center; }
-  .c-platform__item::before {
+  .c-platform-item::before {
     flex-shrink: 0;
     content: counter(platform-counter);
     counter-increment: platform-counter;
@@ -94,6 +115,16 @@
     text-align: center;
     border-radius: 50%; }
 
+.c-photo-set {
+  display: flex;
+  justify-content: center; }
+  .c-photo-set figure {
+    margin: 0.5rem;
+    padding: 0; }
+  .c-photo-set img {
+    display: block;
+    max-width: 100%; }
+
 body {
   font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", sans-serif;
   margin: 0;
@@ -101,3 +132,8 @@ body {
 
 body * {
   box-sizing: border-box; }
+
+a, a:visited {
+  color: #0454d8;
+  -webkit-text-decoration-color: #468bfc;
+          text-decoration-color: #468bfc; }
