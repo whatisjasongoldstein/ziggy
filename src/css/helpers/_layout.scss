@@ -4,13 +4,3 @@
   max-width: 960px;
   margin: 1em auto;
 }
-
-.l-container--separator::after {
-  content: "";
-  display: block;
-  border-bottom: 1px solid #ccc;
-  width: 100vw;
-  position: relative;
-  left: calc(50% - 100vw / 2);
-  margin: 3rem 0;
-}

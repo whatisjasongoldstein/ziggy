@@ -15,20 +15,24 @@
     ]
   }) }}
 
-  <section>
+  <section class="c-section l-container--full">
     {{ component('story.md') | markdown }}
   </section>
 
-  <section>
-    <h1>Precedent</h1>
-    <p>DC has never had a canine public official before, although there are many dogs working as public servants in emergency services.</p>
-    <p>Meanwhile a cat has been the Mayor of XXXX, Alaska for several years.</p>
-    <p>We believe Mr. Ziggy can bridge the gap between longtime District residents, who love their dogs, and the millenial yuppies who <i>really</i> love their dogs and refer to them as ”fur babies” unironically.<sup>*</sup></p>
-    <footer>
-      <small>
-        Mr. Ziggy takes no position on whether dogs should be called ”fur babies.” His owners think this is stupid.
-      </small>
-    </footer>
+  <div class="c-photo-set">
+    <figure>
+      <img src="https://ziggy.scruffylogic.s3.amazonaws.com/assets/puppy-640.jpg">
+      <figcaption>Being a puppy at his CDR foster home</figcaption>
+    </figure>
+    <figure>
+      <img src="https://ziggy.scruffylogic.s3.amazonaws.com/assets/guitar-640.jpg">
+      <figcaption>Ziggy has picked up guitar in his free time. He likes Bowie, obviously.</figcaption>
+    </figure>
+  </div>
+
+  <section class="c-section l-container--full">
+
+    {{ component('precedent.md') | markdown }}
   </section>
 
 {% endblock body %}

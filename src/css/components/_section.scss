@@ -1,0 +1,23 @@
+.c-section {}
+
+.c-section--no-separator {
+  &::after {
+    display: none;
+  }
+}
+
+.c-section h1 {
+  color: $color--dark-blue;
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.c-section p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+.c-section small {
+  color: #666;
+}

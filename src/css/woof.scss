@@ -2,11 +2,13 @@
 @import "./settings/typography";
 
 @import "./helpers/layout";
+@import "./helpers/lines";
 
-@import "./components/header";
+@import "./components/section";
 @import "./components/hero";
 @import "./components/breaking";
 @import "./components/platform";
+@import "./components/photo-set";
 
 
 body {
@@ -17,4 +19,9 @@ body {
 
 body * {
   box-sizing: border-box;
+}
+
+a, a:visited {
+  color: $color--dark-blue;
+  text-decoration-color: $color--blue;
 }

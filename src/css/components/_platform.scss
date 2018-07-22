@@ -1,17 +1,11 @@
-.c-platform {
-  h1 {
-    color: $color--pink;
-  }
-}
-
-.c-platform__items {
+.c-platform-items {
   list-style-type: none;
   counter-reset: platform-counter;
   padding: 0;
   margin: 0;
 }
 
-.c-platform__item {
+.c-platform-item {
   display: flex;
   margin: 1rem 0;
   justify-content: flex-start;

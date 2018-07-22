@@ -1,0 +1,14 @@
+.c-photo-set {
+  display: flex;
+  justify-content: center;
+
+  figure {
+    margin: 0.5rem;
+    padding: 0;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}

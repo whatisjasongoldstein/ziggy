@@ -3,6 +3,7 @@
   margin-bottom: 2rem;
   font-size: 1.5rem;
   line-height: 1.5;
+  @include separator();
 }
 
 .c-breaking__label {
