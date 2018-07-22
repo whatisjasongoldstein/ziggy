@@ -43,7 +43,10 @@ const createJS = (dest) => {
 }
 
 const clean = (dest) => {
-  return del([`${ dest }/*`]);
+  return del([
+    `${ dest }/*`,
+    `!${ dest }/CNAME`,
+  ]);
 }
 
 /**
