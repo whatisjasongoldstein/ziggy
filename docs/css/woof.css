@@ -91,7 +91,7 @@
   list-style-type: none;
   counter-reset: platform-counter;
   padding: 0;
-  margin: 0; }
+  margin: 2rem 0; }
 
 .c-platform-item {
   display: flex;
@@ -115,13 +115,73 @@
     text-align: center;
     border-radius: 50%; }
 
-.c-photo-set {
+.c-photoset {
   display: flex;
-  justify-content: center; }
-  .c-photo-set figure {
+  justify-content: center;
+  margin: 2rem 0;
+  flex-direction: column; }
+  @media (min-width: 600px) {
+    .c-photoset {
+      flex-direction: row; } }
+  .c-photoset figure {
     margin: 0.5rem;
-    padding: 0; }
-  .c-photo-set img {
+    padding: 0;
+    position: relative; }
+  .c-photoset figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0; }
+  .c-photoset img {
+    display: block;
+    max-width: 100%; }
+
+.c-photo-module {
+  display: flex;
+  justify-content: space-around;
+  margin: 4rem auto;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px; }
+  @media (min-width: 700px) {
+    .c-photo-module {
+      flex-direction: row; }
+      .c-photo-module.is-reverse {
+        flex-direction: row-reverse; } }
+  .c-photo-module blockquote {
+    line-height: 2;
+    font-size: 1.25rem;
+    margin: 0 1rem; }
+    @media (min-width: 700px) {
+      .c-photo-module blockquote {
+        margin: 0; } }
+  .c-photo-module blockquote footer {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #d80417;
+    text-indent: 1em; }
+  .c-photo-module figure {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    flex-shrink: 0; }
+    @media (min-width: 700px) {
+      .c-photo-module figure {
+        margin: 0.5rem; } }
+  .c-photo-module figure,
+  .c-photo-module blockquote {
+    flex-basis: 100%; }
+    @media (min-width: 700px) {
+      .c-photo-module figure,
+      .c-photo-module blockquote {
+        flex-basis: calc(50% - 2rem); } }
+  .c-photo-module figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 1rem; }
+    @media (min-width: 700px) {
+      .c-photo-module figcaption {
+        margin: 0.5rem 0; } }
+  .c-photo-module img {
     display: block;
     max-width: 100%; }
 
