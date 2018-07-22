@@ -1,4 +1,4 @@
-# Precedence
+# Precedent
 
 DC has never had a canine public official before, although there are many dogs working as public servants in emergency services.
 
