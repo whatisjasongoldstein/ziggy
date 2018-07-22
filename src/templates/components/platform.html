@@ -1,7 +1,9 @@
-<h1>{{ title }}</h1>
+<section class="c-platform l-container--full l-container--separator">
+  <h1>{{ title }}</h1>
 
-<ol>
-  {% for item in items %}
-    <li>{{ item }}</li>
-  {% endfor %}
-</ol>
+  <ol class="c-platform__items">
+    {% for item in items %}
+      <li class="c-platform__item">{{ item }}</li>
+    {% endfor %}
+  </ol>
+</section>
