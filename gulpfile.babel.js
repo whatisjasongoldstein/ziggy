@@ -15,7 +15,7 @@ const server = browserSync.create();
 
 const destinations = {
   dev: '.tmp',
-  dist: 'dist',
+  dist: 'docs',
 }
 
 const createHTML = (dest) => {

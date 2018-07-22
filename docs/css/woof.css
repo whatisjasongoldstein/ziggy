@@ -1,0 +1,46 @@
+.c-hero {
+  height: 100vh;
+  background: #ccc;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("https://ziggy.scruffylogic.s3.amazonaws.com/assets/cover-1920-85.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.c-hero__content {
+  background: rgba(70, 139, 252, 0.9); }
+  @media (min-width: 800px) {
+    .c-hero__content {
+      margin: 5%;
+      max-width: 28rem; } }
+  .c-hero__content > * {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .c-hero__content h1 {
+    font-weight: 300;
+    margin: 0.5rem 0; }
+  .c-hero__content h2 {
+    margin: 0; }
+
+.c-hero__banner {
+  background: #fc4657;
+  font-weight: 900;
+  padding: 1rem;
+  margin-top: 1rem; }
+
+.c-hero__emoji {
+  font-size: 2em;
+  vertical-align: middle;
+  line-height: 1; }
+
+body {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", sans-serif;
+  margin: 0;
+  font-size: 16px; }
+
+body * {
+  box-sizing: border-box; }
