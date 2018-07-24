@@ -26,7 +26,11 @@ const createHTML = async (dest) => {
         'src/markdown/',
       ],
       manageEnv: manageEnvironment,
-    }))
+    })).on('error', (e) => {
+      console.error(`Nunjucks error! 🤬`)
+      console.error(e.message);
+      console.error(e.fileName);
+    })
     .pipe(gulp.dest(dest))
 }
 
