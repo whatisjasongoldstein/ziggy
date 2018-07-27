@@ -124,13 +124,19 @@
     .c-photoset {
       flex-direction: row; } }
   .c-photoset figure {
-    margin: 0.5rem;
     padding: 0;
+    margin: 0;
     position: relative; }
+    @media (min-width: 600px) {
+      .c-photoset figure {
+        margin: 0.5rem; } }
   .c-photoset figcaption {
     font-size: 0.9rem;
     color: #666;
-    margin: 0.5rem 0; }
+    margin: 0.5rem 1rem 2rem 1rem; }
+    @media (min-width: 600px) {
+      .c-photoset figcaption {
+        margin: 0.5rem 0; } }
   .c-photoset img {
     display: block;
     max-width: 100%; }
