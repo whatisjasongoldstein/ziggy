@@ -11,15 +11,22 @@ $breakpoint--stack-photos: 600px;
   }
 
   figure {
-    margin: 0.5rem;
     padding: 0;
+    margin: 0;
     position: relative;
+
+    @media (min-width: $breakpoint--stack-photos) {
+      margin: 0.5rem;
+    }
   }
 
   figcaption {
     font-size: 0.9rem;
     color: #666;
-    margin: 0.5rem 0;
+    margin: 0.5rem 1rem 2rem 1rem;
+    @media (min-width: $breakpoint--stack-photos) {
+      margin: 0.5rem 0;
+    }
   }
 
   img {
