@@ -2,9 +2,9 @@
   "name": "voteforziggy",
   "version": "1.1.8",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.babel.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: Ziggy chewed on the unit tests\" && exit 1",
     "start": "./node_modules/gulp/bin/gulp.js",
     "version": "./node_modules/gulp/bin/gulp.js dist; git add -A docs"
   },
