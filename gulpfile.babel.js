@@ -18,7 +18,7 @@ const destinations = {
   dist: 'docs',
 }
 
-const createHTML = async (dest) => {
+const createHTML = (dest) => {
   return gulp.src('src/templates/pages/**/*.html')
     .pipe(nunjucksRender({
       path: [
@@ -77,7 +77,7 @@ function reload(done) {
 const build = async (dest) => {
   await clean(dest);
 
-  return Promise.all([
+  return await Promise.all([
     createImages(dest),
     createHTML(dest),
     createCSS(dest),
