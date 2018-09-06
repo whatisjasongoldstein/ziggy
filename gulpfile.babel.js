@@ -36,7 +36,9 @@ const createHTML = (dest) => {
 
 const createCSS = (dest) => {
   return gulp.src(['src/**/*.scss'])
-    .pipe(sass())
+    .pipe(sass({
+      outputStyle: 'compressed'
+    }))
     .pipe(autoprefixer())
     .pipe(gulp.dest(dest))
 }
