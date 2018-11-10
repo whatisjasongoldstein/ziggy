@@ -6,4 +6,6 @@ Known for his floppy ears, extreme friendliness, and signature sea lion bark, Zi
 
 A newcomer to politics, Ziggy was inspired when [public outcry convinced the city to legalize dogs on restaurant patios](http://www.pewtrusts.org/en/research-and-analysis/blogs/stateline/2018/07/20/dogs-dining-on-patios-are-illegal-interlopers-no-more). The widespread show of support convinced him the city is ready for its first beagle mayor.
 
+He ran as a the Repuplican candidate against incumbant Muriel Bowser, who is not a puppy.
+
 Ziggy cares deeply about his community and won't rest until he's confident there's no more discarded pizza on the street, and the city works for all citizens, pointy-eared and floppy-eared alike.
