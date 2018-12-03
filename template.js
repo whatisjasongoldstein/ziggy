@@ -1,5 +1,5 @@
-import nunjucks from 'nunjucks';
-import marked from 'marked';
+const nunjucks = require('nunjucks');
+const marked = require('marked');
 
 /**
  * Mark a string as safe so we can include HTML in the template.
@@ -10,7 +10,7 @@ function markSafe(html) {
   return new nunjucks.runtime.SafeString(html);
 }
 
-export const manageEnvironment = function(environment) {
+module.exports.manageEnvironment = function(environment) {
 
   /**
    * Markdown filter

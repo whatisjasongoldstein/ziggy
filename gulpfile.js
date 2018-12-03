@@ -1,15 +1,15 @@
 // Build tools
-import gulp from 'gulp';
-import del from 'del';
-import browserSync from 'browser-sync';
+const gulp = require('gulp');
+const del = require('del');
+const browserSync = require('browser-sync');
 
 // HTML
-import nunjucksRender from 'gulp-nunjucks-render';
-import { manageEnvironment } from './template';
+const nunjucksRender = require('gulp-nunjucks-render');
+const { manageEnvironment } = require('./template');
 
 // CSS
-import sass from 'gulp-sass';
-import autoprefixer from 'gulp-autoprefixer';
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
 
 const server = browserSync.create();
 
