@@ -1,6 +1,6 @@
 {
   "name": "voteforziggy",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "",
   "main": "gulpfile.babel.js",
   "scripts": {
