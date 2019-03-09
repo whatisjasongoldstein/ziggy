@@ -63,7 +63,7 @@ const clean = (dest) => {
 
 const copyLibs = (dest) => {
   return gulp.src([
-    'node_modules/lazysizes/lazysizes.min.js',
+    'node_modules/lazysizes/lazysizes.js',
   ]).pipe(gulp.dest(`${ dest }/lib`));
 }
 
