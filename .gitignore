@@ -1,1 +1,3 @@
 .tmp/
+.next
+node_modules

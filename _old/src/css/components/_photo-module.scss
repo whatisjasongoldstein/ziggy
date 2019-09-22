@@ -1,0 +1,66 @@
+$breakpoint--stacked: 700px;
+
+.c-photo-module {
+  display: flex;
+  justify-content: space-around;
+  margin: 4rem auto;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+
+  @media (min-width: $breakpoint--stacked) {
+    flex-direction: row;
+    &.is-reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  blockquote {
+    line-height: 2;
+    font-size: 1.25rem;
+    margin: 0 1rem;
+    @media (min-width: $breakpoint--stacked) {
+      margin: 0;
+    }
+  }
+
+  // This is the correct semantic markdown for blockquote attribution
+  blockquote footer {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: $color--dark-pink;
+    text-indent: 1em;
+  }
+
+  figure {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    flex-shrink: 0;
+    @media (min-width: $breakpoint--stacked) {
+      margin: 0.5rem;
+    }
+  }
+
+  figure,
+  blockquote {
+    flex-basis: 100%;
+    @media (min-width: $breakpoint--stacked) {
+      flex-basis: calc(50% - 2rem);
+    }
+  }
+
+  figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 1rem;
+    @media (min-width: $breakpoint--stacked) {
+      margin: 0.5rem 0;
+    }
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}

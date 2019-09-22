@@ -1,0 +1,32 @@
+{
+  "name": "voteforziggy",
+  "version": "1.2.6",
+  "description": "",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "echo \"Error: Ziggy chewed on the unit tests\" && exit 1",
+    "start": "./node_modules/gulp/bin/gulp.js",
+    "version": "./node_modules/gulp/bin/gulp.js dist; git add -A docs"
+  },
+  "author": "Ziggy Goldstein-Estes",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "lazysizes": "^4.1.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-sass": "^4.0.2",
+    "marked": "^0.4.0",
+    "nunjucks": "^3.2.0",
+    "sass": "^1.17.2"
+  }
+}
