@@ -8,10 +8,10 @@ function PhotosetItem({ src, alt, caption }) {
   );
 }
 
-export default function Photoset({ items }) {
+export default function Photoset({ items, modifier = "" }) {
   items.forEach(item => {
     item.key = item.src;
   });
 
-  return <div class="c-photoset">{items.map(PhotosetItem)}</div>;
+  return <div class={`c-photoset ${modifier}`}>{items.map(PhotosetItem)}</div>;
 }

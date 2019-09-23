@@ -113,7 +113,6 @@ const Index = () => {
           }
         ]}
       />
-
       <CTA />
     </Base>
   );
