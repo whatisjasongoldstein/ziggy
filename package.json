@@ -16,7 +16,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "npm run build && next export -o ./docs && echo \"ziggyforamerica.com\" > docs/CNAME"
   },
   "repository": {
     "type": "git",
