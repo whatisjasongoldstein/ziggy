@@ -1,4 +1,15 @@
+let _lazyloadbound = false;
+function bindLazyLoad() {
+  if (_lazyloadbound) {
+    return;
+  }
+  _lazyloadbound = true;
+
+  console.log("this should only run once");
+}
+
 function PhotosetItem({ src, alt, caption }) {
+  bindLazyLoad();
   return (
     <figure>
       {/* @TODO: lazyload */}

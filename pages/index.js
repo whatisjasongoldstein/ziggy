@@ -30,7 +30,7 @@ const Index = () => {
         ]}
       ></Platform>
 
-      <section class="c-section l-container--full">
+      <section className="c-section l-container--full">
         <Markdown>{storyText}</Markdown>
       </section>
 
@@ -63,7 +63,7 @@ const Index = () => {
         ]}
       ></Photoset>
 
-      <section class="c-section l-container--full u-separator">
+      <section className="c-section l-container--full u-separator">
         <Markdown>{precedentText}</Markdown>
       </section>
 
@@ -100,7 +100,7 @@ const Index = () => {
         modifier="is-reverse"
       />
 
-      <section class="c-section l-container--full">
+      <section className="c-section l-container--full">
         <Markdown>{futureText}</Markdown>
       </section>
 
