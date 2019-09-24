@@ -8,21 +8,21 @@ function bindLazyLoad() {
   console.log("this should only run once");
 }
 
+import LazyLoadedImage from "./lazyloaded-image";
+
 function PhotosetItem({ src, alt, caption }) {
   bindLazyLoad();
   return (
-    <figure>
+    <figure key={src}>
       {/* @TODO: lazyload */}
-      <img className="lazyload" src={src} alt={alt} />
+      <LazyLoadedImage src={src} alt={alt} />
       <figcaption>{caption}</figcaption>
     </figure>
   );
 }
 
 export default function Photoset({ items, modifier = "" }) {
-  items.forEach(item => {
-    item.key = item.src;
-  });
-
-  return <div class={`c-photoset ${modifier}`}>{items.map(PhotosetItem)}</div>;
+  return (
+    <div className={`c-photoset ${modifier}`}>{items.map(PhotosetItem)}</div>
+  );
 }

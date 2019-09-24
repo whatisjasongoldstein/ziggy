@@ -23,7 +23,7 @@ function GoogleAnalytics() {
 
 export default function Base(props) {
   return (
-    <html lang="en">
+    <>
       <Head>
         <title>Ziggy for America: Repuplican for DC Mayor</title>
         <meta charSet="utf-8" />
@@ -41,11 +41,9 @@ export default function Base(props) {
 
         {props.meta}
       </Head>
-      <body>
-        {props.children}
 
-        <GoogleAnalytics />
-      </body>
-    </html>
+      {props.children}
+      <GoogleAnalytics />
+    </>
   );
 }
