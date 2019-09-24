@@ -17,7 +17,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "npm run build && next export -o ./docs && echo \"ziggyforamerica.com\" > docs/CNAME"
+    "export": "npm run build && next export -o ./docs && echo \"ziggyforamerica.com\" > docs/CNAME && touch docs/.nojekyll"
   },
   "repository": {
     "type": "git",
