@@ -1,3 +1,5 @@
+import LazyLoadedImage from "./lazyloaded-image";
+
 function If({ condition, children }) {
   if (condition) {
     return children;
@@ -10,7 +12,7 @@ export default function PhotoModule(props) {
     <div className={`c-photo-module ${props.modifier || ""}`}>
       <figure>
         {/* @TODO: lazy load */}
-        <img className="lazyload" src={props.src} alt={props.alt} />
+        <LazyLoadedImage src={props.src} alt={props.alt} />
         <figcaption
           dangerouslySetInnerHTML={{ __html: props.caption }}
         ></figcaption>

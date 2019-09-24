@@ -1,67 +1,72 @@
-import dynamic from "next/dynamic";
-import ReactDOM from "react-dom";
-import { Component, useRef, useEffect, useState } from "react";
-import { findDOMNode } from "react-dom";
+import { useRef, useEffect, useState } from "react";
 
-export default class LazyLoadedImage extends Component {
-  constructor() {
-    super();
-    this.elRef = React.createRef();
-    this.state = {
-      src: ""
-    };
+/**
+ * Found https://billyjacoby.dev/intersection-observer-react-hooks
+ * I have no idea why this works...
+ */
+export const useIntersectionObserver = (
+  ref,
+  { threshold, root, rootMargin }
+) => {
+  // configure the state
+  const [state, setState] = useState({
+    inView: false,
+    triggered: false,
+    entry: undefined
+  });
+
+  let observer;
+
+  // Obviously this only works in the browser
+  if (process.browser) {
+    observer =
+      observer ||
+      new IntersectionObserver(
+        (entries, observerInstance) => {
+          // checks to see if the element is intersecting
+          if (entries[0].intersectionRatio > 0) {
+            // if it is update the state, we set triggered as to not re-observe the element
+            setState({
+              inView: true,
+              triggered: true,
+              entry: observerInstance
+            });
+            // unobserve the element
+            observerInstance.unobserve(ref.current);
+          }
+          return;
+        },
+        {
+          rootMargin: "500px"
+        }
+      );
   }
 
-  handleObserver(entries, observer) {
-    console.log(this.observer);
-    const isIntersecting = entries[0].isIntersecting;
-    console.log({
-      isIntersecting,
-      src: this.props.src
-    });
-
-    if (isIntersecting) {
-      this.setState({ src: this.props.src });
+  useEffect(() => {
+    // check that the element exists, and has not already been triggered
+    if (observer && ref.current && !state.triggered) {
+      observer.observe(ref.current);
     }
-    this.unobserve();
-  }
+  });
 
-  componentDidMount() {
-    this.observer = new IntersectionObserver(
-      this.handleObserver.bind(this), //callback
-      {
-        root: null,
-        rootMargin: "500px"
-      }
-    );
-    this.el = findDOMNode(this);
-    this.observer.observe(this.el);
-  }
+  return [state.inView, state.entry];
+};
 
-  unobserve() {
-    if (this.el && this.observer) {
-      // Remove the observation listener
-      this.observer.unobserve(this.el);
-    }
+export default function LazyLoadedImage({ src, alt }) {
+  const elementRef = useRef(null);
+  const [inView, entry] = useIntersectionObserver(elementRef, {
+    threshold: 0
+  });
 
-    this.observer = null;
-  }
+  useEffect(() => {}, [inView]);
 
-  componentWillUnmount() {
-    this.unobserve();
-  }
-
-  render() {
-    const { src, alt } = this.props;
-    const activeSrc = this.state.src;
-    return (
-      <img
-        ref={this.elRef}
-        className="lazyload"
-        src={activeSrc}
-        data-src={src}
-        alt={alt}
-      />
-    );
-  }
+  return (
+    <img
+      ref={elementRef}
+      key={src}
+      className="lazyload"
+      src={inView ? src : ""}
+      alt={alt}
+    />
+  );
 }
