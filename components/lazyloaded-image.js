@@ -5,6 +5,11 @@ export default function LazyLoadedImage({ src, alt }) {
     rootMargin: "500px"
   });
 
+  // Backwards compat.
+  if (process.browser && window.IntersectionObserver === undefined) {
+    inView = true;
+  }
+
   return (
     <img
       ref={ref}
