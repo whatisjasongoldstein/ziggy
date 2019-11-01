@@ -11,13 +11,11 @@ export default function PhotoModule(props) {
   return (
     <div className={`c-photo-module ${props.modifier || ""}`}>
       <figure>
-        {/* @TODO: lazy load */}
         <LazyLoadedImage src={props.src} alt={props.alt} />
         <figcaption
           dangerouslySetInnerHTML={{ __html: props.caption }}
         ></figcaption>
       </figure>
-      {/* @TODO: show conditionally */}
       <blockquote>
         <span>{props.quote}</span>
         <If condition={props.source}>
