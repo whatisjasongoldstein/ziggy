@@ -92,7 +92,7 @@ function Base(props) {
     __self: this
   }), __jsx("meta", {
     property: "og:image",
-    content: "/static/images/cover-1920-85.jpg",
+    content: "/images/cover-1920-85.jpg",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39
@@ -418,7 +418,7 @@ function PhotoModule(props) {
     alt: props.alt,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 14
     },
     __self: this
   }), __jsx("figcaption", {
@@ -427,26 +427,26 @@ function PhotoModule(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 15
     },
     __self: this
   })), __jsx("blockquote", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 19
     },
     __self: this
   }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 20
     },
     __self: this
   }, props.quote), __jsx(If, {
     condition: props.source,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 21
     },
     __self: this
   }, __jsx("footer", {
@@ -455,7 +455,7 @@ function PhotoModule(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 22
     },
     __self: this
   }))));
@@ -861,8 +861,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _iterableToArrayLimit; });
 /* harmony import */ var _core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/get-iterator */ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js");
 /* harmony import */ var _core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/is-iterable */ "./node_modules/@babel/runtime-corejs2/core-js/is-iterable.js");
+/* harmony import */ var _core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1__);
+
 
 function _iterableToArrayLimit(arr, i) {
+  if (!(_core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1___default()(Object(arr)) || Object.prototype.toString.call(arr) === "[object Arguments]")) {
+    return;
+  }
+
   var _arr = [];
   var _n = true;
   var _d = false;
@@ -1124,128 +1131,6 @@ function _typeof(obj) {
 }
 
 module.exports = _typeof;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js ***!
-  \**************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _assertThisInitialized; });
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/defineProperty.js ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
-/*!************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
-  \************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
-function _extends() {
-  _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js ***!
-  \******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _inheritsLoose; });
-function _inheritsLoose(subClass, superClass) {
-  subClass.prototype = Object.create(superClass.prototype);
-  subClass.prototype.constructor = subClass;
-  subClass.__proto__ = superClass;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
-  \*********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectWithoutPropertiesLoose; });
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
 
 /***/ }),
 
@@ -1925,7 +1810,7 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.6.9' };
+var core = module.exports = { version: '2.6.11' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -4003,67 +3888,6 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 /***/ }),
 
-/***/ "./node_modules/invariant/browser.js":
-/*!*******************************************!*\
-  !*** ./node_modules/invariant/browser.js ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-/**
- * Use invariant() to assert state which your program assumes to be true.
- *
- * Provide sprintf-style format (only %s is supported) and arguments
- * to provide information about what broke and what you were
- * expecting.
- *
- * The invariant message will be stripped in production, but the invariant
- * will remain to ensure logic does not differ in production.
- */
-
-var invariant = function(condition, format, a, b, c, d, e, f) {
-  if (true) {
-    if (format === undefined) {
-      throw new Error('invariant requires an error message argument');
-    }
-  }
-
-  if (!condition) {
-    var error;
-    if (format === undefined) {
-      error = new Error(
-        'Minified exception occurred; use the non-minified dev environment ' +
-        'for the full error message and additional helpful warnings.'
-      );
-    } else {
-      var args = [a, b, c, d, e, f];
-      var argIndex = 0;
-      error = new Error(
-        format.replace(/%s/g, function() { return args[argIndex++]; })
-      );
-      error.name = 'Invariant Violation';
-    }
-
-    error.framesToPop = 1; // we don't care about invariant's own frame
-    throw error;
-  }
-};
-
-module.exports = invariant;
-
-
-/***/ }),
-
 /***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fjasongoldstein%2Fdev%2Fsites%2Fziggy%2Fpages%2Findex.js!./":
 /*!*******************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fjasongoldstein%2Fdev%2Fsites%2Fziggy%2Fpages%2Findex.js ***!
@@ -4237,13 +4061,11 @@ var amp_1 = __webpack_require__(/*! ./amp */ "./node_modules/next/dist/next-serv
 function defaultHead() {
   var inAmpMode = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
   var head = [react_1["default"].createElement("meta", {
-    key: "charSet",
     charSet: "utf-8"
   })];
 
   if (!inAmpMode) {
     head.push(react_1["default"].createElement("meta", {
-      key: "viewport",
       name: "viewport",
       content: "width=device-width,minimum-scale=1,initial-scale=1"
     }));
@@ -4287,17 +4109,28 @@ function unique() {
   var metaTypes = new _Set();
   var metaCategories = {};
   return function (h) {
-    if (h.key && typeof h.key !== 'number' && h.key.indexOf('.$') === 0) {
-      if (keys.has(h.key)) return false;
-      keys.add(h.key);
-      return true;
-    }
+    var unique = true;
+
+    if (h.key && typeof h.key !== 'number' && h.key.indexOf('$') > 0) {
+      var key = h.key.slice(h.key.indexOf('$') + 1);
+
+      if (keys.has(key)) {
+        unique = false;
+      } else {
+        keys.add(key);
+      }
+    } // eslint-disable-next-line default-case
+
 
     switch (h.type) {
       case 'title':
       case 'base':
-        if (tags.has(h.type)) return false;
-        tags.add(h.type);
+        if (tags.has(h.type)) {
+          unique = false;
+        } else {
+          tags.add(h.type);
+        }
+
         break;
 
       case 'meta':
@@ -4306,21 +4139,28 @@ function unique() {
           if (!h.props.hasOwnProperty(metatype)) continue;
 
           if (metatype === 'charSet') {
-            if (metaTypes.has(metatype)) return false;
-            metaTypes.add(metatype);
+            if (metaTypes.has(metatype)) {
+              unique = false;
+            } else {
+              metaTypes.add(metatype);
+            }
           } else {
             var category = h.props[metatype];
             var categories = metaCategories[metatype] || new _Set();
-            if (categories.has(category)) return false;
-            categories.add(category);
-            metaCategories[metatype] = categories;
+
+            if (categories.has(category)) {
+              unique = false;
+            } else {
+              categories.add(category);
+              metaCategories[metatype] = categories;
+            }
           }
         }
 
         break;
     }
 
-    return true;
+    return unique;
   };
 }
 /**
@@ -4486,22 +4326,73 @@ exports["default"] = function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InView", function() { return InView; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useInView", function() { return useInView; });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
-/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var invariant__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! invariant */ "./node_modules/invariant/browser.js");
-/* harmony import */ var invariant__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(invariant__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tiny-invariant */ "./node_modules/tiny-invariant/dist/tiny-invariant.esm.js");
 
 
 
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
 
+  return obj;
+}
 
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
 
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
 
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+function _inheritsLoose(subClass, superClass) {
+  subClass.prototype = Object.create(superClass.prototype);
+  subClass.prototype.constructor = subClass;
+  subClass.__proto__ = superClass;
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
 
 var INSTANCE_MAP = new Map();
 var OBSERVER_MAP = new Map();
@@ -4543,7 +4434,7 @@ function observe(element, callback, options) {
       rootMargin = _options.rootMargin,
       threshold = _options.threshold; // Validate that the element is not being used in another <Observer />
 
-  invariant__WEBPACK_IMPORTED_MODULE_6___default()(!INSTANCE_MAP.has(element), "react-intersection-observer: Trying to observe %s, but it's already being observed by another instance.\nMake sure the `ref` is only used by a single <Observer /> instance.\n\n%s", element);
+  !!INSTANCE_MAP.has(element) ?  true ? Object(tiny_invariant__WEBPACK_IMPORTED_MODULE_1__["default"])(false, "react-intersection-observer: Trying to observe %s, but it's already being observed by another instance.\nMake sure the `ref` is only used by a single <Observer /> instance.\n\n%s") : undefined : void 0;
   /* istanbul ignore if */
 
   if (!element) return; // Create a unique ID for this observer instance, based on the root, root margin and threshold.
@@ -4664,7 +4555,7 @@ function isPlainChildren(props) {
 var InView =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_3__["default"])(InView, _React$Component);
+  _inheritsLoose(InView, _React$Component);
 
   function InView() {
     var _this;
@@ -4675,21 +4566,21 @@ function (_React$Component) {
 
     _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
 
-    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_4__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__["default"])(_this), "state", {
+    _defineProperty(_assertThisInitialized(_this), "state", {
       inView: false,
       entry: undefined
     });
 
-    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_4__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__["default"])(_this), "node", null);
+    _defineProperty(_assertThisInitialized(_this), "node", null);
 
-    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_4__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__["default"])(_this), "handleNode", function (node) {
+    _defineProperty(_assertThisInitialized(_this), "handleNode", function (node) {
       if (_this.node) unobserve(_this.node);
       _this.node = node ? node : null;
 
       _this.observeNode();
     });
 
-    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_4__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__["default"])(_this), "handleChange", function (inView, entry) {
+    _defineProperty(_assertThisInitialized(_this), "handleChange", function (inView, entry) {
       // Only trigger a state update if inView has changed.
       // This prevents an unnecessary extra state update during mount, when the element stats outside the viewport
       if (inView !== _this.state.inView || inView) {
@@ -4711,10 +4602,7 @@ function (_React$Component) {
   var _proto = InView.prototype;
 
   _proto.componentDidMount = function componentDidMount() {
-    /* istanbul ignore else  */
-    if (true) {
-      invariant__WEBPACK_IMPORTED_MODULE_6___default()(this.node, "react-intersection-observer: No DOM node found. Make sure you forward \"ref\" to the root DOM element you want to observe.");
-    }
+    !this.node ?  true ? Object(tiny_invariant__WEBPACK_IMPORTED_MODULE_1__["default"])(false, "react-intersection-observer: No DOM node found. Make sure you forward \"ref\" to the root DOM element you want to observe.") : undefined : void 0;
   };
 
   _proto.componentDidUpdate = function componentDidUpdate(prevProps, prevState) {
@@ -4774,19 +4662,19 @@ function (_React$Component) {
         root = _this$props2.root,
         rootMargin = _this$props2.rootMargin,
         onChange = _this$props2.onChange,
-        props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_this$props2, ["children", "as", "tag", "triggerOnce", "threshold", "root", "rootMargin", "onChange"]);
+        props = _objectWithoutPropertiesLoose(_this$props2, ["children", "as", "tag", "triggerOnce", "threshold", "root", "rootMargin", "onChange"]);
 
-    return Object(react__WEBPACK_IMPORTED_MODULE_5__["createElement"])(as || tag || 'div', Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    return Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(as || tag || 'div', _extends({
       ref: this.handleNode
     }, props), children);
   };
 
   return InView;
-}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
-Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_4__["default"])(InView, "displayName", 'InView');
+_defineProperty(InView, "displayName", 'InView');
 
-Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_4__["default"])(InView, "defaultProps", {
+_defineProperty(InView, "defaultProps", {
   threshold: 0,
   triggerOnce: false
 });
@@ -4797,16 +4685,16 @@ function useInView(options) {
     options = {};
   }
 
-  var ref = Object(react__WEBPACK_IMPORTED_MODULE_5__["useRef"])();
+  var ref = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])();
 
-  var _React$useState = Object(react__WEBPACK_IMPORTED_MODULE_5__["useState"])({
+  var _React$useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
     inView: false,
     entry: undefined
   }),
       state = _React$useState[0],
       setState = _React$useState[1];
 
-  var setRef = Object(react__WEBPACK_IMPORTED_MODULE_5__["useCallback"])(function (node) {
+  var setRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (node) {
     if (ref.current) {
       unobserve(ref.current);
     }
@@ -4828,7 +4716,7 @@ function useInView(options) {
 
     ref.current = node;
   }, [options.threshold, options.root, options.rootMargin, options.triggerOnce]);
-  Object(react__WEBPACK_IMPORTED_MODULE_5__["useDebugValue"])(state.inView);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useDebugValue"])(state.inView);
   return [setRef, state.inView, state.entry];
 }
 
@@ -4840,12 +4728,12 @@ function useInView(options) {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_01f9a3fa864a7b7414d8 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_5f137288facb1107b491 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_01f9a3fa864a7b7414d8 */ "dll-reference dll_01f9a3fa864a7b7414d8"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_5f137288facb1107b491 */ "dll-reference dll_5f137288facb1107b491"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -4856,7 +4744,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_01f9a3fa864a7b7414d8
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_RESULT__;;/*! showdown v 1.9.0 - 10-11-2018 */
+var __WEBPACK_AMD_DEFINE_RESULT__;;/*! showdown v 1.9.1 - 02-11-2019 */
 (function(){
 /**
  * Created by Tivie on 13-07-2015.
@@ -5828,7 +5716,7 @@ showdown.helper.padEnd = function padEnd (str, targetLength, padString) {
  * POLYFILLS
  */
 // use this instead of builtin is undefined for IE8 compatibility
-if (typeof(console) === 'undefined') {
+if (typeof console === 'undefined') {
   console = {
     warn: function (msg) {
       'use strict';
@@ -7083,10 +6971,10 @@ showdown.Converter = function (converterOptions) {
        */
       setConvFlavor = setFlavor,
 
-    /**
-     * Metadata of the document
-     * @type {{parsed: {}, raw: string, format: string}}
-     */
+      /**
+       * Metadata of the document
+       * @type {{parsed: {}, raw: string, format: string}}
+       */
       metadata = {
         parsed: {},
         raw: '',
@@ -7145,7 +7033,7 @@ showdown.Converter = function (converterOptions) {
           'Please inform the developer that the extension should be updated!');
         legacyExtensionLoading(showdown.extensions[ext], ext);
         return;
-      // END LEGACY SUPPORT CODE
+        // END LEGACY SUPPORT CODE
 
       } else if (!showdown.helper.isUndefined(extensions[ext])) {
         ext = extensions[ext];
@@ -7689,7 +7577,7 @@ showdown.subParser('anchors', function (text, options, globals) {
     // to external links. Hash links (#) open in same page
     if (options.openLinksInNewWindow && !/^#/.test(url)) {
       // escaped _
-      result += ' target="¨E95Eblank"';
+      result += ' rel="noopener noreferrer" target="¨E95Eblank"';
     }
 
     result += '>' + linkText + '</a>';
@@ -7707,7 +7595,7 @@ showdown.subParser('anchors', function (text, options, globals) {
 
   // normal cases
   text = text.replace(/\[((?:\[[^\]]*]|[^\[\]])*)]()[ \t]*\([ \t]?<?([\S]+?(?:\([\S]*?\)[\S]*?)?)>?(?:[ \t]*((["'])([^"]*?)\5))?[ \t]?\)/g,
-                      writeAnchorTag);
+    writeAnchorTag);
 
   // handle reference-style shortcuts: [link text]
   // These must come last in case you've also got [link test][1]
@@ -7728,7 +7616,7 @@ showdown.subParser('anchors', function (text, options, globals) {
       var lnk = options.ghMentionsLink.replace(/\{u}/g, username),
           target = '';
       if (options.openLinksInNewWindow) {
-        target = ' target="¨E95Eblank"';
+        target = ' rel="noopener noreferrer" target="¨E95Eblank"';
       }
       return st + '<a href="' + lnk + '"' + target + '>' + mentions + '</a>';
     });
@@ -7762,7 +7650,7 @@ var simpleURLRegex  = /([*~_]+|\b)(((https?|ftp|dict):\/\/|www\.)[^'">\s]+?\.[^'
           append = trailingPunctuation;
         }
         if (options.openLinksInNewWindow) {
-          target = ' target="¨E95Eblank"';
+          target = ' rel="noopener noreferrer" target="¨E95Eblank"';
         }
         return lmc + '<a href="' + link + '"' + target + '>' + lnkTxt + '</a>' + append + tmc;
       };
@@ -7963,7 +7851,7 @@ showdown.subParser('codeSpans', function (text, options, globals) {
 
   text = globals.converter._dispatch('codeSpans.before', text, options, globals);
 
-  if (typeof(text) === 'undefined') {
+  if (typeof text === 'undefined') {
     text = '';
   }
   text = text.replace(/(^|[^\\])(`+)([^\r]*?[^`])\2(?!`)/gm,
@@ -8383,7 +8271,7 @@ showdown.subParser('hashHTMLBlocks', function (text, options, globals) {
 
       //2. Split the text in that position
       var subTexts = showdown.helper.splitAtIndex(text, opTagPos),
-      //3. Match recursively
+          //3. Match recursively
           newSubText1 = showdown.helper.replaceRecursiveRegExp(subTexts[1], repFunc, patLeft, patRight, 'im');
 
       // prevent an infinite loop
@@ -8502,13 +8390,13 @@ showdown.subParser('headers', function (text, options, globals) {
 
   var headerLevelStart = (isNaN(parseInt(options.headerLevelStart))) ? 1 : parseInt(options.headerLevelStart),
 
-  // Set text-style headers:
-  //	Header 1
-  //	========
-  //
-  //	Header 2
-  //	--------
-  //
+      // Set text-style headers:
+      //	Header 1
+      //	========
+      //
+      //	Header 2
+      //	--------
+      //
       setextRegexH1 = (options.smoothLivePreview) ? /^(.+)[ \t]*\n={2,}[ \t]*\n+/gm : /^(.+)[ \t]*\n=+[ \t]*\n+/gm,
       setextRegexH2 = (options.smoothLivePreview) ? /^(.+)[ \t]*\n-{2,}[ \t]*\n+/gm : /^(.+)[ \t]*\n-+[ \t]*\n+/gm;
 
@@ -9309,7 +9197,7 @@ showdown.subParser('tables', function (text, options, globals) {
   }
 
   var tableRgx       = /^ {0,3}\|?.+\|.+\n {0,3}\|?[ \t]*:?[ \t]*(?:[-=]){2,}[ \t]*:?[ \t]*\|[ \t]*:?[ \t]*(?:[-=]){2,}[\s\S]+?(?:\n\n|¨0)/gm,
-    //singeColTblRgx = /^ {0,3}\|.+\|\n {0,3}\|[ \t]*:?[ \t]*(?:[-=]){2,}[ \t]*:?[ \t]*\|[ \t]*\n(?: {0,3}\|.+\|\n)+(?:\n\n|¨0)/gm;
+      //singeColTblRgx = /^ {0,3}\|.+\|\n {0,3}\|[ \t]*:?[ \t]*(?:[-=]){2,}[ \t]*:?[ \t]*\|[ \t]*\n(?: {0,3}\|.+\|\n)+(?:\n\n|¨0)/gm;
       singeColTblRgx = /^ {0,3}\|.+\|[ \t]*\n {0,3}\|[ \t]*:?[ \t]*(?:[-=]){2,}[ \t]*:?[ \t]*\|[ \t]*\n( {0,3}\|.+\|[ \t]*\n)*(?:\n|¨0)/gm;
 
   function parseStyles (sLine) {
@@ -9998,6 +9886,32 @@ if (true) {
 
 /***/ }),
 
+/***/ "./node_modules/tiny-invariant/dist/tiny-invariant.esm.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/tiny-invariant/dist/tiny-invariant.esm.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var isProduction = "development" === 'production';
+var prefix = 'Invariant failed';
+function invariant(condition, message) {
+    if (condition) {
+        return;
+    }
+    if (isProduction) {
+        throw new Error(prefix);
+    }
+    throw new Error(prefix + ": " + (message || ''));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (invariant);
+
+
+/***/ }),
+
 /***/ "./pages/index.js":
 /*!************************!*\
   !*** ./pages/index.js ***!
@@ -10080,19 +9994,19 @@ var Index = function Index() {
     __self: this
   }, _markdown_story_md__WEBPACK_IMPORTED_MODULE_9__["default"])), __jsx(_components_photoset__WEBPACK_IMPORTED_MODULE_7__["default"], {
     items: [{
-      src: "/static/images/puppy-640.jpg",
+      src: "/images/puppy-640.jpg",
       caption: "Being a puppy at his CDR foster home",
       alt: "Young Ziggy chews his bone",
       width: 640,
       height: 480
     }, {
-      src: "/static/images/guitar-640.jpg",
+      src: "/images/guitar-640.jpg",
       caption: "Ziggy has picked up guitar in his free time. He likes Bowie, obviously.",
       alt: "Beagle. Guitar. Ears. Couch. Flop flop.",
       width: 640,
       height: 480
     }, {
-      src: "/static/images/stick-640.jpg",
+      src: "/images/stick-640.jpg",
       caption: "Ziggy does not shy away from big challenges. It's the kind of can-chew attitude DC needs.",
       alt: "Little dog with a big stick. You might call it a tree branch.",
       width: 640,
@@ -10117,7 +10031,7 @@ var Index = function Index() {
     },
     __self: this
   }, _markdown_precedent_md__WEBPACK_IMPORTED_MODULE_10__["default"])), __jsx(_components_photo_module__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    src: "/static/images/office-hours.jpg",
+    src: "/images/office-hours.jpg",
     caption: "Ziggy holds office hours.",
     alt: "Puppy sitting in a black leather chair, listening with his head tilted.",
     quote: "\u201DHe is excellent at hearing. Listening... depends. Which means he won\u2019t be captive to special interests unless they happen to be golden retrievers.\u201D",
@@ -10128,7 +10042,7 @@ var Index = function Index() {
     },
     __self: this
   }), __jsx(_components_photo_module__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    src: "/static/images/dacha.jpg",
+    src: "/images/dacha.jpg",
     caption: "Napping in one of DC's finest dog-friendly establishments.",
     alt: "Puppy sleeps on the pavement between benches.",
     quote: "\u201DMr. Ziggy appears confused by complex issues like Initiative 77. He seems less interested in whether restaurant workers will receive tips than whether they will bring him food, which they currently do not.\u201D",
@@ -10140,7 +10054,7 @@ var Index = function Index() {
     },
     __self: this
   }), __jsx(_components_photo_module__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    src: "/static/images/rumi.jpg",
+    src: "/images/rumi.jpg",
     quote: "\u201DWoof. Woof, woof. Woof! He'll be an excellent mayor.\u201D",
     alt: "Ziggy plays tug-of-war with a golden retriever.",
     source: "Rumi, Golden Puppy and Ziggy's BFF",
@@ -10150,7 +10064,7 @@ var Index = function Index() {
     },
     __self: this
   }), __jsx(_components_photo_module__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    src: "/static/images/grass-640.jpg",
+    src: "/images/grass-640.jpg",
     quote: "\u201DWhat the hell are you talking about?\u201D",
     alt: "Puppy in the grass.",
     caption: "Ziggy plans to revitalize and expand DC's green spaces so that he can roll around in them.",
@@ -10176,7 +10090,7 @@ var Index = function Index() {
     __self: this
   }, _markdown_future_md__WEBPACK_IMPORTED_MODULE_11__["default"])), __jsx(_components_photoset__WEBPACK_IMPORTED_MODULE_7__["default"], {
     items: [{
-      src: "/static/images/suitcase.jpg",
+      src: "/images/suitcase.jpg",
       alt: "Ziggy sits on a suitcase, looking prepared!",
       caption: "Floppy as hell and ready to roll!"
     }],
@@ -10198,7 +10112,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!***********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjasongoldstein%2Fdev%2Fsites%2Fziggy%2Fpages%2Findex.js ***!
   \***********************************************************************************************************************************/
@@ -10210,16 +10124,16 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
-/***/ "dll-reference dll_01f9a3fa864a7b7414d8":
+/***/ "dll-reference dll_5f137288facb1107b491":
 /*!*******************************************!*\
-  !*** external "dll_01f9a3fa864a7b7414d8" ***!
+  !*** external "dll_5f137288facb1107b491" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_01f9a3fa864a7b7414d8;
+module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

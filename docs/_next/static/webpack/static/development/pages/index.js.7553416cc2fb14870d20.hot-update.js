@@ -92,7 +92,7 @@ function Base(props) {
     __self: this
   }), __jsx("meta", {
     property: "og:image",
-    content: "/static/images/cover-1920-85.jpg",
+    content: "/images/cover-1920-85.jpg",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39
@@ -118,4 +118,4 @@ function Base(props) {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.1b327299df056207cc09.hot-update.js.map
+//# sourceMappingURL=index.js.7553416cc2fb14870d20.hot-update.js.map
