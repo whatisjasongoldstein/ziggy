@@ -36,7 +36,7 @@ export default function Base(props) {
           property="og:description"
           content="Ziggy for America! #VoteZiggy #FloppyEars"
         />
-        <meta property="og:image" content="/static/images/cover-1920-85.jpg" />
+        <meta property="og:image" content="/images/cover-1920-85.jpg" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
         {props.meta}

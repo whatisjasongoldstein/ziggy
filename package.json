@@ -5,13 +5,13 @@
   "main": "index.js",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
-    "next": "^9.0.6",
-    "node-sass": "^4.12.0",
+    "next": "^9.2.1",
+    "node-sass": "^4.13.1",
     "raw-loader": "^3.1.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-intersection-observer": "^8.24.2",
-    "showdown": "^1.9.0"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-intersection-observer": "^8.25.2",
+    "showdown": "^1.9.1"
   },
   "devDependencies": {},
   "scripts": {
