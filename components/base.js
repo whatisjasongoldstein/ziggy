@@ -1,25 +1,5 @@
 import Head from "next/head";
 
-function GoogleAnalytics() {
-  return (
-    <div>
-      <script
-        defer
-        src="https://www.googletagmanager.com/gtag/js?id=UA-90008301-5"
-      ></script>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-90008301-5');`
-        }}
-      ></script>
-    </div>
-  );
-}
 
 export default function Base(props) {
   return (
@@ -43,7 +23,6 @@ export default function Base(props) {
       </Head>
 
       {props.children}
-      <GoogleAnalytics />
     </>
   );
 }
