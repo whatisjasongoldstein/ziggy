@@ -12,7 +12,6 @@ import storyText from "../markdown/story.md";
 import precedentText from "../markdown/precedent.md";
 import futureText from "../markdown/future.md";
 
-import "../styles/site.scss";
 
 const Index = () => {
   return (
