@@ -1,0 +1,18 @@
+.root {
+  margin-top: 3em;
+}
+
+.image {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 800px) {
+  .image {
+    float: right;
+    margin: -3em 0 0.5em 1em;
+    width: 50%;
+  }
+}

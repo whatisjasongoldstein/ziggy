@@ -1,13 +1,14 @@
+import styles from "./breaking.module.css";
+import { containerStyle } from "./helpers.module.css";
+
 export default function Breaking() {
   return (
-    <section className="c-breaking l-container--full l-container--separator">
+    <section className={styles.root + " " + containerStyle}>
       <p>
-        <strong className="c-breaking__label">Breaking News</strong>&nbsp; In his victory speech,
-        Ziggy thanked his supporters and said he is a good dog and will be a good mayor.
-      </p>
-      <p>
-        Mr. Ziggy will serve a 4 year term as the Mayor of DC, although its not clear at this time
-        whether those are in human or dog years.
+        <strong className={styles.label}>Breaking News</strong>
+        the first puppy mayor of <b>Washington, DC</b> is running for re-election! Mr. Ziggy's
+        capable and floppy-eared leadership has helped DC navigated the challenges of the last few
+        years, and he's just getting started!
       </p>
     </section>
   );

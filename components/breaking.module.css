@@ -1,0 +1,13 @@
+.root {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.label {
+  background: var(--color-pink);
+  display: inline-block;
+  color: white;
+  padding: 0 0.5em;
+}

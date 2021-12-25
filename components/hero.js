@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/components/hero.module.css";
+import styles from "./hero.module.css";
 
 export default function Hero() {
   return (
@@ -7,9 +7,12 @@ export default function Hero() {
       <div className={styles.heroText}>
         <h1 className={styles.h1}>Re-elect Mayor Ziggy!</h1>
         <h2 className={styles.h2}>
-          You want a friend in Washington?
-          <br />
-          Get a dog!
+          <i>
+            ”You want a friend in Washington?
+            <br />
+            Get a dog!”
+          </i>
+          <br />- Harry S. Truman
         </h2>
       </div>
     </div>

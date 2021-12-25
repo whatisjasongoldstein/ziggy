@@ -1,0 +1,30 @@
+.root {
+}
+
+.sectionHead {
+  color: var(--color-dark-blue);
+  margin: 0 0 0.5em 0;
+}
+
+.shadeDefault {
+  /* Noop */
+}
+
+.shadeBlue {
+  background: var(--color-dark-blue);
+  color: white;
+  padding: 1em 0;
+  font-size: 1.2rem;
+}
+
+.shadeRed {
+  background: var(--color-pink);
+  color: white;
+  padding: 1em 0;
+}
+
+.shadeBlue a,
+.shadeRed a {
+  color: white;
+  text-decoration: underline;
+}

@@ -10,6 +10,7 @@
   background-repeat: no-repeat;
   background-position: 10% 0;
   position: relative;
+  border-bottom: var(--hairline);
 }
 
 @media (min-width: 600px) {
@@ -67,7 +68,6 @@
 }
 
 .h2 {
-  font-style: italic;
   font-weight: normal;
   font-size: clamp(10px, 6vw, 25px);
 }

@@ -1,4 +1,4 @@
-import Markdown from "../components/markdown";
+import Section from "../components/section";
 
 import Base from "../components/base";
 import CTA from "../components/cta";
@@ -7,17 +7,32 @@ import Breaking from "../components/breaking";
 import Platform from "../components/platform";
 import Photoset from "../components/photoset";
 import PhotoModule from "../components/photo-module";
+import Accomplishments from "../components/accomplishments";
+import Story from "../components/story";
+import Quote from "../components/quote";
 
-import storyText from "../markdown/story.md";
 import precedentText from "../markdown/precedent.md";
 import futureText from "../markdown/future.md";
-
 
 const Index = () => {
   return (
     <Base>
       <Hero />
       <Breaking />
+      <hr />
+      <Section head="First term accomplishments">
+        <Accomplishments />
+      </Section>
+      <Story />
+      <Section shade="RED">
+        <Quote attribution="The Economist">
+          “We admit we were skeptical that a beagle puppy could run a city of this size and
+          complexity, but Mayor Ziggy’s performance over the last few years has exceeded that of
+          most public officials.”
+        </Quote>
+      </Section>
+
+      {/*
       <Platform
         title="Ziggy's Platform"
         items={[
@@ -25,13 +40,11 @@ const Index = () => {
           "Banning discrimination against dogs, requiring all restaurants and public businesses to allow them inside",
           "Criminalizing squirrels",
           "Universal Doggy Daycare",
-          "Designating Trump Hotel as an Official Pee Spot"
+          "Designating Trump Hotel as an Official Pee Spot",
         ]}
       ></Platform>
 
-      <section className="c-section l-container--full">
-        <Markdown>{storyText}</Markdown>
-      </section>
+
 
       <Photoset
         items={[
@@ -40,25 +53,23 @@ const Index = () => {
             caption: "Being a puppy at his CDR foster home",
             alt: "Young Ziggy chews his bone",
             width: 640,
-            height: 480
+            height: 480,
           },
           {
             src: "/images/guitar-640.jpg",
-            caption:
-              "Ziggy has picked up guitar in his free time. He likes Bowie, obviously.",
+            caption: "Ziggy has picked up guitar in his free time. He likes Bowie, obviously.",
             alt: "Beagle. Guitar. Ears. Couch. Flop flop.",
             width: 640,
-            height: 480
+            height: 480,
           },
           {
             src: "/images/stick-640.jpg",
             caption:
               "Ziggy does not shy away from big challenges. It's the kind of can-chew attitude DC needs.",
-            alt:
-              "Little dog with a big stick. You might call it a tree branch.",
+            alt: "Little dog with a big stick. You might call it a tree branch.",
             width: 640,
-            height: 480
-          }
+            height: 480,
+          },
         ]}
       ></Photoset>
 
@@ -108,10 +119,12 @@ const Index = () => {
           {
             src: "/images/suitcase.jpg",
             alt: "Ziggy sits on a suitcase, looking prepared!",
-            caption: "Floppy as hell and ready to roll!"
-          }
+            caption: "Floppy as hell and ready to roll!",
+          },
         ]}
       />
+       */}
+
       <CTA />
     </Base>
   );

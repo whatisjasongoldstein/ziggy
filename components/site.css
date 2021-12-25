@@ -2,17 +2,22 @@
   --font-sans: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Roboto",
     "Oxygen-Sans", "Ubuntu", sans-serif;
 
+  --font-serif: Georgia, serf;
+
   --color-blue: #468bfc;
   --color-transparent-blue: #468bfcdd;
   --color-dark-blue: #30599c;
   --color-pink: #fc4657;
   --color-transparent-pink: #fc4657dd;
+
+  --hairline: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 body {
   font-family: var(--font-sans);
   margin: 0;
   font-size: 16px;
+  line-height: 1.5;
 }
 
 body * {
@@ -23,4 +28,20 @@ a,
 a:visited {
   color: var(--color-dark-blue);
   text-decoration-color: var(--color-blue);
+}
+
+p {
+  margin: 0 0 0.5em 0;
+}
+
+hr {
+  width: 50%;
+  max-width: 10em;
+  margin: 2em auto;
+  border-bottom: var(--hairline);
+}
+
+h1,
+h2 {
+  margin: 0 0 0.5em 0;
 }

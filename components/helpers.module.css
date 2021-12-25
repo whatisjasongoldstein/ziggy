@@ -1,5 +1,4 @@
-
-.l-container--full {
+.containerStyle {
   width: calc(100% - 40px);
   max-width: 960px;
   margin: 1em auto;
