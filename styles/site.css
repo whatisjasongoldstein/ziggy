@@ -1,0 +1,26 @@
+:root {
+  --font-sans: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Roboto",
+    "Oxygen-Sans", "Ubuntu", sans-serif;
+
+  --color-blue: #468bfc;
+  --color-transparent-blue: #468bfcdd;
+  --color-dark-blue: #30599c;
+  --color-pink: #fc4657;
+  --color-transparent-pink: #fc4657dd;
+}
+
+body {
+  font-family: var(--font-sans);
+  margin: 0;
+  font-size: 16px;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+a,
+a:visited {
+  color: var(--color-dark-blue);
+  text-decoration-color: var(--color-blue);
+}
