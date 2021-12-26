@@ -111,36 +111,39 @@ const Index = () => {
         </ul>
       </Section>
 
-      {/*
-      <PhotoModule
-        src="/images/office-hours.jpg"
-        caption="Ziggy holds office hours."
-        alt="Puppy sitting in a black leather chair, listening with his head tilted."
-        quote="”He is excellent at hearing. Listening... depends. Which means he won’t be captive to special interests unless they happen to be golden retrievers.”"
-        source="Jason, owner"
-      ></PhotoModule>
-
-      <PhotoModule
-        src="/images/dacha.jpg"
-        caption="Napping in one of DC's finest dog-friendly establishments."
-        alt="Puppy sleeps on the pavement between benches."
-        quote="”Mr. Ziggy appears confused by complex issues like Initiative 77. He seems less interested in whether restaurant workers will receive tips than whether they will bring him food, which they currently do not.”"
-        source="<i>The Washington Post</i>"
-        modifier="is-reverse"
-      />
-
-      <PhotoModule
-        src="/images/rumi.jpg"
-        quote="”Woof. Woof, woof. Woof! He'll be an excellent mayor.”"
-        alt="Ziggy plays tug-of-war with a golden retriever."
-        source="Rumi, Golden Puppy and Ziggy's BFF"
-      /> */}
-
-      <Section shade="BLUE">
+      <Section shade="BLUE" withMargin={true}>
         <Quote attribution="Muriel Bowser, DC Mayor 2015-2019">
           “Once again, I have no idea what the hell you’re talking about. Please stop calling me.”
         </Quote>
       </Section>
+
+      <Photoset
+        items={[
+          {
+            src: "/images/rumi.jpg",
+            alt: "Ziggy plays tug-of-war with a golden retriever.",
+            caption: "”Woof. Woof, woof. Woof! He's been an excellent mayor.” - Rumi, Ziggy's BFF",
+            width: 640,
+            height: 480,
+          },
+          {
+            src: "/images/office-hours.jpg",
+            alt: "Beagle sitting in a black chair tilting his head.",
+            caption:
+              "Mayor Ziggy holds office hours. He's very good at listening. Especially for small furry animals sneaking into his back yard.",
+            width: 640,
+            height: 480,
+          },
+          {
+            src: "/images/duck.jpg",
+            alt: "Ziggy chews a purple duck.",
+            caption:
+              "Mayor Ziggy discusses pandemic reopening strategy with his trusted adviser, a purple duck.",
+            width: 640,
+            height: 480,
+          },
+        ]}
+      />
 
       <Photoset
         items={[
@@ -154,9 +157,7 @@ const Index = () => {
         ]}
       />
 
-      <Section shade="RED">
-        <CTA />
-      </Section>
+      <CTA />
     </Base>
   );
 };

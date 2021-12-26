@@ -1,0 +1,16 @@
+.tag {
+  border: 2px solid var(--color-pink);
+  color: white;
+  padding: 0.25em 1em;
+  margin-left: 0.5em;
+  border-radius: 1em;
+}
+
+.tag:first-child {
+  margin-left: 0;
+}
+
+.copyright {
+  margin-top: 4em;
+  font-size: 0.75rem;
+}

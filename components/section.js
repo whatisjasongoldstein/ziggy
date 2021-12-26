@@ -7,11 +7,18 @@ const shades = {
   RED: "shadeRed",
 };
 
-export default function Section({ head, children, shade = shades.DEFAULT, className = "" }) {
+export default function Section({
+  head,
+  children,
+  shade = shades.DEFAULT,
+  className = "",
+  withMargin = false,
+}) {
   let shadeStyle = styles[shades[shade]] || "";
+  let marginStyle = withMargin ? styles.withMargin : "";
 
   return (
-    <section className={shadeStyle + " " + className}>
+    <section className={shadeStyle + ` ${marginStyle}` + ` ${shadeStyle}` + ` ${className}`}>
       <div className={containerStyle}>
         {head && <h2 className={styles.sectionHead}>{head}</h2>}
         {children}

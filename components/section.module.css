@@ -28,3 +28,10 @@
   color: white;
   text-decoration: underline;
 }
+
+.withMargin {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
