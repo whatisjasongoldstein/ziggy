@@ -131,7 +131,7 @@ const Index = () => {
             src: "/images/office-hours.jpg",
             alt: "Beagle sitting in a black chair tilting his head.",
             caption:
-              "Mayor Ziggy holds office hours. He's very good at listening. Especially for small furry animals sneaking into his back yard.",
+              "Mayor Ziggy holds office hours. He's very good at listening when he wants to be, like if there's a treat or small furry animal involved.",
             width: 640,
             height: 480,
           },
