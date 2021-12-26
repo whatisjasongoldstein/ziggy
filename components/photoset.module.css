@@ -1,0 +1,28 @@
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.figure {
+  padding: 0;
+  margin: 1em 0;
+  flex-basis: 100%;
+}
+
+.caption {
+  padding: 0 1em;
+}
+
+@media (min-width: 800px) {
+  .row {
+    flex-direction: row;
+  }
+
+  .figure {
+    margin: 1em;
+  }
+
+  .caption {
+    padding: 0;
+  }
+}

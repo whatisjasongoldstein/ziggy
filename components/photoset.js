@@ -1,16 +1,16 @@
 import Image from "next/image";
 import LazyLoadedImage from "./lazyloaded-image";
+import styles from "./photoset.module.css";
 
-function PhotosetItem({ src, alt, caption }) {
+function PhotosetItem({ src, alt, caption, width, height }) {
   return (
-    <figure key={src}>
-      {/* @TODO: lazyload */}
-      <LazyLoadedImage src={src} alt={alt} />
-      <figcaption>{caption}</figcaption>
+    <figure className={styles.figure} key={src}>
+      <Image src={src} alt={alt} width={width} height={height} layout="responsive" />
+      <figcaption className={styles.caption}>{caption}</figcaption>
     </figure>
   );
 }
 
-export default function Photoset({ items, modifier = "" }) {
-  return <div className={`c-photoset ${modifier}`}>{items.map(PhotosetItem)}</div>;
+export default function Photoset({ items }) {
+  return <div className={styles.row}>{items.map(PhotosetItem)}</div>;
 }

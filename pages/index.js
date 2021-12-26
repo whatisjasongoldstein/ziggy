@@ -4,16 +4,12 @@ import Base from "../components/base";
 import CTA from "../components/cta";
 import Hero from "../components/hero";
 import Breaking from "../components/breaking";
-import Platform from "../components/platform";
 import Photoset from "../components/photoset";
-import PhotoModule from "../components/photo-module";
-import Accomplishments from "../components/accomplishments";
 import Story from "../components/story";
 import Quote from "../components/quote";
 
-import precedentText from "../markdown/precedent.md";
-import futureText from "../markdown/future.md";
-import { Book } from "../components/book";
+import Book from "../components/book";
+import Markdown from "../components/markdown";
 
 const Index = () => {
   return (
@@ -22,7 +18,25 @@ const Index = () => {
       <Breaking />
       <hr />
       <Section head="First term accomplishments">
-        <Accomplishments />
+        <ul>
+          <li>Protected green spaces and dog parks</li>
+          <li>Cleaned up the streets (especially of pizza)</li>
+          <li>
+            Built close relationships with local businesses and restaurants to acquire treats and
+            keep their concerns top of mind in these challenging times
+          </li>
+          <li>
+            Promoted puppies of the highest integrity, professionalism, and nose-work in the MPD K9
+            Unit to sniff out guns and end the scourge of violence*
+          </li>
+          <li>Replaced old racist statues with dog statues</li>
+          <li>
+            Peed in the Lincoln Memorial. This isn’t what it sounds like, he was paying respects to
+            President Lincoln’s dog, Fido.
+          </li>
+        </ul>
+
+        <small>* This is actually a real thing.</small>
       </Section>
       <Story />
       <Section shade="RED">
@@ -34,17 +48,6 @@ const Index = () => {
       </Section>
       <Book />
       <hr />
-      <Platform
-        title="Ziggy's Platform"
-        items={[
-          "Building more dog parks",
-          "Banning discrimination against dogs, requiring all restaurants and public businesses to allow them inside",
-          "Criminalizing squirrels",
-          "Universal Doggy Daycare",
-          "Designating Trump Hotel as an Official Pee Spot",
-        ]}
-      ></Platform>
-
       <Photoset
         items={[
           {
@@ -55,35 +58,60 @@ const Index = () => {
             height: 480,
           },
           {
-            src: "/images/guitar-640.jpg",
-            caption: "Ziggy has picked up guitar in his free time. He likes Bowie, obviously.",
-            alt: "Beagle. Guitar. Ears. Couch. Flop flop.",
+            src: "/images/hard-work.jpg",
+            caption: "Being the mayor is hard work.",
             width: 640,
             height: 480,
           },
           {
-            src: "/images/stick-640.jpg",
+            src: "/images/big-bone-640.jpg",
             caption:
-              "Ziggy does not shy away from big challenges. It's the kind of can-chew attitude DC needs.",
-            alt: "Little dog with a big stick. You might call it a tree branch.",
+              "Ziggy does not shy away from America’s challenges, which, like this bone, are enormous.",
+            alt: "Beagle gnawing on a bone for a much bigger dog while sitting on a 'good dogs only' pillow.",
             width: 640,
             height: 480,
           },
         ]}
       ></Photoset>
 
-      <Section shade="BLUE">
-        <Quote attribution="Muriel Bowser, DC Mayor 2015-2019">
-          “Once again, I have no idea what the hell you’re talking about. Please stop calling me.”
-        </Quote>
+      <Photoset
+        items={[
+          {
+            src: "/images/bbq.jpg",
+            caption:
+              "Mayor Ziggy took care to check in on locally owned businesses in the pandemic to make sure they were okay and still had plenty of treats.",
+            alt: "Ziggy stands outside a closed restaurant",
+            width: 640,
+            height: 480,
+          },
+          {
+            src: "/images/cat-640.jpg",
+            caption:
+              "Despite Ziggy’s best efforts to reach across the aisle, cats still want nothing to do with him.",
+            width: 640,
+            height: 480,
+          },
+        ]}
+      ></Photoset>
+
+      <hr />
+
+      <Section head="Ziggy's Platform">
+        <ul>
+          <li>
+            Reform the health code to allow dogs inside restaurants in order to help them recover
+            from the last few years
+          </li>
+          <li>
+            Universal Doggy Daycare for humans and puppies. Ziggy wants an economy that supports all
+            families and small businesses—especially the dogged one.
+          </li>
+          <li>Clemency for Squirrels</li>
+          <li>DC Statehood. For real this time. No taxation without puppy representation.</li>
+        </ul>
       </Section>
 
       {/*
-
-      <section className="c-section l-container--full u-separator">
-        <Markdown>{precedentText}</Markdown>
-      </section>
-
       <PhotoModule
         src="/images/office-hours.jpg"
         caption="Ziggy holds office hours."
@@ -106,33 +134,29 @@ const Index = () => {
         quote="”Woof. Woof, woof. Woof! He'll be an excellent mayor.”"
         alt="Ziggy plays tug-of-war with a golden retriever."
         source="Rumi, Golden Puppy and Ziggy's BFF"
-      />
+      /> */}
 
-      <PhotoModule
-        src="/images/grass-640.jpg"
-        quote="”What the hell are you talking about?”"
-        alt="Puppy in the grass."
-        caption="Ziggy plans to revitalize and expand DC's green spaces so that he can roll around in them."
-        source="Muriel Bowser, DC Mayor 2015-2019"
-        modifier="is-reverse"
-      />
-
-      <section className="c-section l-container--full">
-        <Markdown>{futureText}</Markdown>
-      </section>
+      <Section shade="BLUE">
+        <Quote attribution="Muriel Bowser, DC Mayor 2015-2019">
+          “Once again, I have no idea what the hell you’re talking about. Please stop calling me.”
+        </Quote>
+      </Section>
 
       <Photoset
         items={[
           {
             src: "/images/suitcase.jpg",
             alt: "Ziggy sits on a suitcase, looking prepared!",
-            caption: "Floppy as hell and ready to roll!",
+            caption: "He's floppy as hell and ready to roll!",
+            width: 1200,
+            height: 652,
           },
         ]}
       />
-       */}
 
-      <CTA />
+      <Section shade="RED">
+        <CTA />
+      </Section>
     </Base>
   );
 };
