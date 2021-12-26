@@ -9,7 +9,7 @@ export default function Base(props) {
         <meta name="Description" content="Re-elect Mayor Ziggy, the first puppy mayor of DC!" />
         <meta property="og:title" content="Re-elect Mayor Ziggy" />
         <meta property="og:description" content="Ziggy for America! #VoteZiggy #FloppyEars" />
-        <meta property="og:image" content="/images/cover-1920-85.jpg" />
+        <meta property="og:image" content="/images/share.jpg" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
         {props.meta}
