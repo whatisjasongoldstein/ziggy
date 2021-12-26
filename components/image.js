@@ -5,5 +5,5 @@ function loader({ src, width, quality }) {
 }
 
 export default function UnprocessedImage(props) {
-  return <Image loader={loader} {...props} />;
+  return <Image unoptimized={true} loader={loader} {...props} />;
 }
