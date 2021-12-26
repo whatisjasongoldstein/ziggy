@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "./image";
 import styles from "./story.module.css";
 import Section from "./section";
 

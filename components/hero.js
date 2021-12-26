@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "./image";
 import styles from "./hero.module.css";
 
 export default function Hero() {

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "./image";
 import Section from "./section";
 import styles from "./book.module.css";
 

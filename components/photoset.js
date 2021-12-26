@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "./image";
 import LazyLoadedImage from "./lazyloaded-image";
 import styles from "./photoset.module.css";
 
