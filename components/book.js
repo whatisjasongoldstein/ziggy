@@ -20,6 +20,10 @@ export default function Book() {
             Thomas Jefferson wrote that the tree of liberty would be sustained by blood. Ziggy says
             we should just pee on it instead.
           </p>
+          <p>
+            The <i>New York Times</i> calls the book ”so honest an insightful it could have only
+            been written by a dog.”
+          </p>
         </div>
       </div>
     </Section>

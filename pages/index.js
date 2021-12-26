@@ -108,6 +108,7 @@ const Index = () => {
           </li>
           <li>Clemency for Squirrels</li>
           <li>DC Statehood. For real this time. No taxation without puppy representation.</li>
+          <li>On the pandemic, follow the science. And if not, at least follow your nose.</li>
         </ul>
       </Section>
 
