@@ -57,8 +57,7 @@
 }
 
 .h1,
-.h2,
-.h3 {
+.h2 {
   line-height: 1.25;
   margin: 6px 0;
 }
@@ -68,8 +67,9 @@
 }
 
 .h2 {
-  font-weight: normal;
+  font-weight: 900;
   font-size: clamp(10px, 6vw, 25px);
+  text-transform: uppercase;
 }
 
 .h3 {
@@ -78,4 +78,6 @@
 
 .attr {
   margin-top: 0.5em;
+  font-weight: 600;
+  font-size: clamp(10px, 4vw, 16px);
 }
