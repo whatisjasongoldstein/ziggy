@@ -1,0 +1,27 @@
+.image {
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+}
+
+@media (min-width: 600px) {
+  .balanceLayout {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .image {
+    width: 33%;
+    flex-basis: 33%;
+    flex-shrink: 0;
+    margin-left: 2em;
+  }
+
+  .text {
+    font-size: 1.2em;
+    line-height: 2;
+  }
+}

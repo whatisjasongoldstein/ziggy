@@ -39,6 +39,7 @@ hr {
   max-width: 10em;
   margin: 2em auto;
   border-bottom: var(--hairline);
+  clear: both;
 }
 
 h1,

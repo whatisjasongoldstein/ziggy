@@ -1,3 +1,4 @@
+import Image from "next/image";
 import LazyLoadedImage from "./lazyloaded-image";
 
 function PhotosetItem({ src, alt, caption }) {
@@ -11,7 +12,5 @@ function PhotosetItem({ src, alt, caption }) {
 }
 
 export default function Photoset({ items, modifier = "" }) {
-  return (
-    <div className={`c-photoset ${modifier}`}>{items.map(PhotosetItem)}</div>
-  );
+  return <div className={`c-photoset ${modifier}`}>{items.map(PhotosetItem)}</div>;
 }

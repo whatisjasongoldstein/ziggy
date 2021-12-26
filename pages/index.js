@@ -13,6 +13,7 @@ import Quote from "../components/quote";
 
 import precedentText from "../markdown/precedent.md";
 import futureText from "../markdown/future.md";
+import { Book } from "../components/book";
 
 const Index = () => {
   return (
@@ -31,8 +32,8 @@ const Index = () => {
           most public officials.”
         </Quote>
       </Section>
-
-      {/*
+      <Book />
+      <hr />
       <Platform
         title="Ziggy's Platform"
         items={[
@@ -43,8 +44,6 @@ const Index = () => {
           "Designating Trump Hotel as an Official Pee Spot",
         ]}
       ></Platform>
-
-
 
       <Photoset
         items={[
@@ -72,6 +71,14 @@ const Index = () => {
           },
         ]}
       ></Photoset>
+
+      <Section shade="BLUE">
+        <Quote attribution="Muriel Bowser, DC Mayor 2015-2019">
+          “Once again, I have no idea what the hell you’re talking about. Please stop calling me.”
+        </Quote>
+      </Section>
+
+      {/*
 
       <section className="c-section l-container--full u-separator">
         <Markdown>{precedentText}</Markdown>

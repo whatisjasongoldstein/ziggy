@@ -6,7 +6,7 @@ export default function Breaking() {
     <section className={styles.root + " " + containerStyle}>
       <p>
         <strong className={styles.label}>Breaking News</strong>
-        the first puppy mayor of <b>Washington, DC</b> is running for re-election! Mr. Ziggy's
+        &nbsp;the first puppy mayor of <b>Washington, DC</b> is running for re-election! Mr. Ziggy's
         capable and floppy-eared leadership has helped DC navigated the challenges of the last few
         years, and he's just getting started!
       </p>

@@ -12,7 +12,7 @@ export default function Hero() {
             <br />
             Get a dog!”
           </i>
-          <br />- Harry S. Truman
+          <footer className={styles.attr}>- Harry S. Truman</footer>
         </h2>
       </div>
     </div>
