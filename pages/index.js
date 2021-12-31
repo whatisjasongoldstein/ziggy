@@ -104,10 +104,12 @@ const Index = () => {
           </li>
           <li>
             Universal Doggy Daycare for humans and puppies. Ziggy wants an economy that supports all
-            families and small businesses—especially the dogged one.
+            families and small businesses, and especially the dogged one.
           </li>
           <li>Clemency for Squirrels</li>
           <li>DC Statehood. For real this time. No taxation without puppy representation.</li>
+          <li>Make WMATA dog friendly.</li>
+          <li>Convert old office buildings into dog parks to revitalize downtown.</li>
           <li>On the pandemic, follow the science. And if not, at least follow your nose.</li>
         </ul>
       </Section>
